@@ -1,0 +1,47 @@
+[
+    {
+        "id": "cat-01",
+        "name": "Electronics",
+        "products": [
+            {
+                "id": "p1",
+                "name": "PC",
+                "speed": "fast",
+                "price": "3000",
+                "additions": ["HDD"],
+                "description": "This is a cool Computer"
+            },
+            {
+                "id": "p2",
+                "name": "Mobile phone",
+                "speed": "slow",
+                "price": "1000",
+                "additions": ["camera", "bluethooth"],
+                "description": "This is a normal mobile phone"
+            }
+        ]
+    },
+    
+    {
+        "id": "cat-02",
+        "name": "Cars",
+        "products": [
+            {
+                "id": "p3",
+                "name": "VW",
+                "speed": "fast",
+                "additions": ["green"],
+                "price": "20000",
+                "description": "This is a VW car"
+            },
+            {
+                "id": "p4",
+                "name": "Audi",
+                "speed": "fast",
+                "additions": ["orange"],
+                "price": "60000",
+                "description": "This is a very cool Audi car"
+            }
+        ]
+    }
+]

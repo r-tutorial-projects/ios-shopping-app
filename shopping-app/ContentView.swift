@@ -9,8 +9,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let catalog = Bundle.main.decode([Category].self, from: "Catalog.json")
+    
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            List {
+                ForEach(catalog) { section in
+                    Section(header: Text(section.name)) {
+                        ForEach(section.products) { product in
+                            ProductRow(product: product)
+                        }
+                    }
+                }
+            }
+            .navigationBarTitle("Catalog")
+            .listStyle(GroupedListStyle())
+        }
     }
 }
 
